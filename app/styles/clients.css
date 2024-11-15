@@ -1,0 +1,101 @@
+@import url('constants.css');
+
+.clients {
+  aspect-ratio: 0.9;
+}
+.mobilePaddingHeader{
+  padding-top:1%;
+}
+.clients-logo-section {
+  width: 100% ;
+  padding:0 30px;
+  /* height: 100px; */
+  display: block;
+}
+
+.logo {
+  max-height: 50px;
+}
+
+img {
+  /* width:50% !important; */
+  /* height: 50% !important; */
+}
+
+.slick-slide {
+  height: 0px !important;
+}
+
+.slick-slide.slick-active {
+  height: 100% !important;
+}
+
+.slick-list {
+  margin: 0;
+}
+
+.slick-dots li button:before {
+  color: var(--primary-colour);
+}
+
+.slick-dots {
+  display: none;
+}
+
+.clientLogo {
+  /* width: 50% !important; */
+  /* display:flex;
+  align-items: center;
+  justify-content: center; */
+  /* padding-bottom:20px; */
+}
+
+.scroll-animationClients {
+  opacity: 0;
+  /* transform: translateY(20px); */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+  /* animation:slideInFromBottom 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; */
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(15%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.scroll-animationClients.visibleClients {
+  opacity: 1;
+  animation: slideInFromBottom 2s;
+}
+
+/* .clientTransition:nth-child(1){
+  opacity: 1;
+  
+} */
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    animation: slideInFromBottom 2s;
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}

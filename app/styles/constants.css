@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Madurai+W01+Ext+Black&display=swap') */
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+/* css list for veract website:
+1)font-color and font-family
+2)horizontal section
+3)Landing page
+4)navbar component
+5)founder's page
+6)services page
+7)case studies or portfolio page
+8)testimonials Page
+9)contact us page */
+ /* black:#OCOCOC;
+ grey:#3E3E3E; */
+:root {
+    /* colors */
+    --google-blue-color:#4285F4;
+    /* --primary-colour: #FE5000; */
+    --primary-colour: #4285F4;
+    --secondary-colour: #FFA500;
+    --tertiary-colour: #FFA500;
+    --header-horizontal-line:#e0e0e0;
+
+    --primary-header-text-color: #FFA500;
+    --secondary-header-text-color: #ffffff;
+    --primary-section-title-color: #FFA500;
+    --white-text-colour:#ffffff;
+    --case-studies-background-colour:#eaeaea;
+    --text-hover-colour:#29bdb0;
+    --black-colour:#000;
+    --testimonials-content-color: #797979;
+
+    /* font-family */
+    --primary-font:'Poppins';
+    --secondary-font:'Product Sans';
+    --tertiary-font:'Lato', Arial, Helvetica, Verdana, sans-serif !important; /* it is not working */
+    --founders-desk-font:'Handlee';
+    --logo-font:'Lalezar';
+    --testimonials-font: 'Merriweather';
+
+
+    /* font-size */
+    --logo-font-size:60px; /*6xl*/
+    --LandingPage-custom-text:48px; /*5xl*/
+    --LandingPage-custom-text-mobile:28px;
+    --LandingPage-custom-text-mobile-desc:28px;
+    --servicesInsideText:20px;
+    --logo-before-scroll:96px;/*8xl*/
+    --logo-after-scroll:30px;/*3xl*/
+    --logo-mobile-view:36px;/*4xl*/
+    
+    /*font-weight*/
+    --font-normal:400;
+    --font-medium:500;
+    --font-semi-bold:600;
+    --font-bold:700;
+    --font-extrabold:800;
+}   
+
+.dark-mode{
+     /* colors */
+     --primary-colour: #FFA500;
+     --secondary-colour: #FFA500;
+     --tertiary-colour: #FFA500;
+ 
+     --primary-header-text-color: #FFA500;
+     --secondary-header-text-color: #ffffff;
+     --primary-section-title-color: #FFA500;
+     --white-text-colour:#ffffff;
+     --case-studies-background-colour:#eaeaea;
+     --text-hover-colour:#29bdb0;
+     --black-colour:#000;
+ 
+     /* font-family */
+     --primary-font:'Poppins';
+     --secondary-font:'Product Sans';
+     --tertiary-font:'Lato', Arial, Helvetica, Verdana, sans-serif !important; /* it is not working */
+     --founders-desk-font:'Handlee';
+ 
+ 
+     /* font-size */
+     --logo-font-size:60px; /*6xl*/
+     --LandingPage-custom-text:48px; /*5xl*/
+     --servicesInsideText:20px;
+
+     /*font-weight*/
+    --font-normal:400;
+    --font-medium:500;
+    --font-semi-bold:600;
+    --font-bold:700;
+    --font-extrabold:800;
+
+}
