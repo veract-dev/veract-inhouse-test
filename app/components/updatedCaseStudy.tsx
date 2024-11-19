@@ -26,11 +26,22 @@ export default function UpdatedCaseStudy() {
     };
 
     const handleMenuClick = (sectionId: string) => {
-        console.log("sectionId", sectionId)
         const removePrefix = sectionId.replace('content', '');
         const parseToInt = parseInt(removePrefix, 10);
+        
+        // Immediately set the selected tab
         setSelectedTab(parseToInt);
-        scrollToSection(sectionId.toString());
+        
+        // Find and scroll to section
+        const sectionRef = contentRefs.current.find(ref => ref?.id === sectionId);
+        if (sectionRef) {
+            // Scroll to the top of the section instead of centering it
+            const yOffset = sectionRef.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+                top: yOffset,
+                behavior: 'smooth'
+            });
+        }
     };
 
    
@@ -415,50 +426,68 @@ export default function UpdatedCaseStudy() {
     useEffect(() => {
         document.title = "Veract";
         const section = searchParams?.get("id") ?? "";
-        console.log("section", section);
-    
+
         if (section) {
-            handleMenuClick(section);
-            // scrollToSection(section);
+            // Just set the selected tab without scrolling
+            const removePrefix = section.replace('content', '');
+            const parseToInt = parseInt(removePrefix, 10);
+            setSelectedTab(parseToInt);
+            
+            // Delay the scroll slightly to ensure the tab is selected first
+            setTimeout(() => {
+                handleMenuClick(section);
+            }, 100);
         } else {
             setSelectedTab(1);
-            scrollToSection('content1');
         }
-    
-        // setTimeout(() => {
-            // setIsLoading(false);
-        // }, 200);
-    
+
         window.history.replaceState(null, '', '/cutomer-success');
     }, [searchParams]);
     
     useEffect(() => {
-        if (!isLoading && selectedTab && showsite) {
-            scrollToSection(`content${selectedTab}`);
-            setShowSite(false);
-        }
-    }, [isLoading, selectedTab]);
-
-    useEffect(() => {
+        let scrollTimeout: NodeJS.Timeout;
+        
         const handleScroll = () => {
-            const scrollPosition = window.scrollY; // Get current scroll position
-            contentRefs.current.forEach((ref, index) => {
-                if (ref) {
-                    const { top, bottom } = ref.getBoundingClientRect();
-                    // Check if the section is in the viewport
-                    if (top <= window.innerHeight / 2 && bottom >= window.innerHeight / 2) {
-                        setSelectedTab(index + 1); // Update selected tab based on the visible section
+            // Clear the previous timeout
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            
+            // Set a new timeout
+            scrollTimeout = setTimeout(() => {
+                const viewportMiddle = window.innerHeight / 2;
+                
+                // Find the section closest to the middle of the viewport
+                let closestSection = null;
+                let closestDistance = Infinity;
+                
+                contentRefs.current.forEach((ref, index) => {
+                    if (ref) {
+                        const rect = ref.getBoundingClientRect();
+                        const sectionMiddle = (rect.top + rect.bottom) / 2;
+                        const distance = Math.abs(sectionMiddle - viewportMiddle);
+                        
+                        if (distance < closestDistance) {
+                            closestDistance = distance;
+                            closestSection = index + 1;
+                        }
                     }
+                });
+                
+                if (closestSection !== null && closestSection !== selectedTab) {
+                    setSelectedTab(closestSection);
                 }
-            });
+            }, 100); // Debounce time of 100ms
         };
 
         window.addEventListener('scroll', handleScroll);
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
         };
-    }, []);
+    }, [selectedTab]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -473,6 +502,17 @@ export default function UpdatedCaseStudy() {
         };
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+          const scrollTop = window.scrollY;
+          const triggerPoint = window.innerHeight * 0.05; // Adjust this value as needed
+          setIsVisible(scrollTop > triggerPoint);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <div>
             {isLoading ? (
@@ -480,7 +520,7 @@ export default function UpdatedCaseStudy() {
             ) : (
                 <div className="desktopCaseStudy">
                     <div id="portfolioDetails" className='fontFamily'>
-                        <div className={`dashboard ${isVisible ? 'h-[86.75vh]' : 'h-[74.5vh]'} overflow-auto ${isSidebarCentered ? 'centeredSidebar' : ''}`} id="container">
+                        <div className={`dashboard h-[74.5vh] ${isVisible ? 'centeredSidebar' : ' '} overflow-auto ${isSidebarCentered ? 'centeredSidebar' : ''}`} id="container">
                             {sideNavDetails.map((item: any, index: any) => (
                                 <div key={index} className='menuRowDetails' onClick={() => { handleMenuClick(item.id) }}>
                                     <img src={`${selectedTab === index + 1 ? `${item.selectedTitleImage}` : `${item.titleImage}`}`} className="w-8" />
