@@ -11,7 +11,7 @@ const mobileCustomerSuccess =
                 <span style={{ color: '#4285F4', fontWeight:'bold' }}>Evollve</span> is an edtech platform that revolutionizes augmented learning
             </span>
         ),
-        caseImage: '/caseStudies/mobile_Evo11ve.svg',
+        caseImage: '/webpImages/eVO11VE.webp',
         challenges: 'A custom-built, voice-to-text enabled personalized AI coach',
         solution: 'Veract team designed and developed a desktop application with integrated voice-to-text functionality, implementing advanced noise cancellation features and incorporating seamless chat capabilities.',
         services: ['Software architecture', 'Technology consulting', 'Front end development', 'Back end development', 'Deployment'],
