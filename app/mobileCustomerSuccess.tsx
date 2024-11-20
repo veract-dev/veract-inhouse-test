@@ -49,7 +49,7 @@ const mobileCustomerSuccess =
                 <span style={{ color: '#4285F4', fontWeight:'bold' }}>Anyo</span> is a health and wellness app that addresses the significant issue of mental health.
             </span>
         ),
-        caseImage: '/caseStudyReflectionImages/anyo_new_img.svg',
+        caseImage: '/webpImages/anyo.webp',
         challenges: 'The founders of Anyo were looking for a one-stop shop for technical advice and development for their live chat-enabled platform with streaming audio, video along with chatbots.',
         solution: 'Within five months, Veract\'s team of architects and developers successfully designed and deployed: four online portals , the Anyo mobile app. Key technical decisions included: architecture selection, framework choice.',
         services: ['Software architecture','Technology consulting','Software development','Deployment'],
@@ -139,7 +139,7 @@ const mobileCustomerSuccess =
                 <span style={{ color: '#4285F4', fontWeight:'bold' }}>Beanstalk Farmers</span> operates in the exciting farm-to-table space.
             </span>
         ),
-        caseImage: '/caseStudies/eCom.svg',
+        caseImage: '/webpImages/BF.webp',
         challenges: 'Payment enabled e-commerce site in time for customers produce season.',
         solution: 'Veract team developed and deployed a payment enabled custom designed web application.',
         services: ['Software architecture','Technology consulting' ,'Frontend development','Backend Development','Deployment'],
@@ -160,7 +160,7 @@ const mobileCustomerSuccess =
                 <span style={{ color: '#4285F4', fontWeight:'bold' }}>Rajdeep</span> is a distributor of industrial products with multiple principals, multiple products, in multiple locations.
             </span>
         ),
-        caseImage: '/caseStudyReflectionImages/CRM_new_img.svg',
+        caseImage: '/webpImages/sales.webp',
         challenges: 'Salesman attrition, inconsistent data, quotation production and reporting were the client’s pain concerns. Customer was searching for a solution that would operate with SAP integration and fit into their usual routine.',
         solution: 'Veract created a mobile and online application that seamlessly integrated with the customers existing software.',
         services: ['Software architecture','Technology consulting' ,'Software Development','Deployment'],
