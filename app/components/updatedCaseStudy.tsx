@@ -190,7 +190,7 @@ export default function UpdatedCaseStudy() {
             caseImage: '/updatedCaseStudiesIcon/wellnessPurple.svg',
             challenges: 'The founders of Anyo were looking for a one-stop shop for technical advice and development of their live chat-enabled platform with streaming audio, video and chatbots',
             challengePoints: '',
-            solution: `Within five months, Veract's team of architects and developers successfully designed and deployed:  four online portals , the Anyo mobile app. Key technical decisions included:  architecture selection, framework choice.`,
+            solution: `Within five months, Veract's team of architects and developers successfully designed and deployed:  four online portals, the Anyo mobile app. Key technical decisions included:  architecture selection, framework choice.`,
             solutionPoints: '',
             services: 'Software architecture, Technology consulting, Software development, Deployment',
             platform: 'Mobile, Web ',
@@ -291,14 +291,14 @@ export default function UpdatedCaseStudy() {
             caseTitle: 'E-Commerce for Seasonal Produce',
             caseTitleContent: (
                 <span>
-                    <span style={{ color: '#4285F4', fontWeight:'bold' }}>Beanstalk</span> operates in the exciting farm-to-table space
+                    <span style={{ color: '#4285F4', fontWeight:'bold' }}>Beanstalk Farmers</span> operates in the exciting farm-to-table space.
                 </span>
             ),
             stampImage: "",
             caseImage: '/updatedCaseStudiesIcon/eComPurple.svg',
-            challenges: 'Payment enabled e-commerce site in time for customers produce season',
+            challenges: 'Payment enabled e-commerce site in time for customers produce season.',
             challengePoints: ' ',
-            solution: 'Veract team developed and deployed a payment enabled custom designed web application ',
+            solution: 'Veract team developed and deployed a payment enabled custom designed web application. ',
             solutionPoints: '',
             services: 'Software architecture,Technology consulting,Front end development,Back end development ,Deployment',
             platform: 'Web',
@@ -326,8 +326,8 @@ export default function UpdatedCaseStudy() {
             caseTitle: 'Sales Enquiry and Quote Management',
             caseTitleContent: (
                 <span>
-                    <span style={{ color: '#4285F4', fontWeight:'bold' }}>Rajdeep</span> is a pune-based distributor of industrial products with multiple principals, multiple products, in multiple locations.
-                </span>
+                <span style={{ color: '#4285F4', fontWeight:'bold' }}>Rajdeep</span> is a distributor of industrial products with multiple principals, multiple products, in multiple locations.
+            </span>
             ),
             stampImage: "",
             caseImage: '/portfolio/salesPurple.png',
@@ -402,7 +402,7 @@ export default function UpdatedCaseStudy() {
             caseTitleContent: 'The Institute of Buffalo Science focuses on improving buffalo health monitoring by tracking key parameters and mapping udder thermal profiles to detect early onset of mastitis in dairy animals.',
             stampImage: "",
             caseImage: '/updatedCaseStudiesIcon/thermalPurple.svg',
-            challenges: 'Integration of the thermal imaging camera with the monitoring system and IOT. Ensuring real-time data capture and processing. Compatibility between the camera hardware and software solutions.Reliable data transfer protocols to minimize latency.',
+            challenges: 'Integration of the thermal imaging camera with the monitoring system and IOT. Ensuring real-time data capture and processing. Compatibility between the camera hardware and software solutions. Reliable data transfer protocols to minimize latency.',
             challengePoints: ' ',
             solution: 'Software Development: Created custom software for real-time analysis and visualization of udder thermal profiles and camera control through a user-friendly interface.',
             solutionPoints: '',
@@ -520,7 +520,7 @@ export default function UpdatedCaseStudy() {
             ) : (
                 <div className="desktopCaseStudy">
                     <div id="portfolioDetails" className='fontFamily'>
-                        <div className={`dashboard h-[74.5vh] ${isVisible ? 'centeredSidebar' : ' '} overflow-auto ${isSidebarCentered ? 'centeredSidebar' : ''}`} id="container">
+                        <div className={`dashboard h-[74.5vh] transition-all duration-300 ${isVisible ? 'translate-y-[-10%]' : ''} overflow-auto `} id="container">
                             {sideNavDetails.map((item: any, index: any) => (
                                 <div key={index} className='menuRowDetails' onClick={() => { handleMenuClick(item.id) }}>
                                     <img src={`${selectedTab === index + 1 ? `${item.selectedTitleImage}` : `${item.titleImage}`}`} className="w-8" />

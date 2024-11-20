@@ -107,7 +107,7 @@ const mobileCustomerSuccess =
         caseTitle: 'Agriculture Finance Ecosystem',
         caseTitleContent: (
             <span>
-                <span style={{ color: '#4285F4', fontWeight:'bold' }}>Agrosperity KiVi</span> is a phygital platform in the area of agri supply chain and financing.
+                Agrosperity<span style={{ color: '#4285F4', fontWeight:'bold' }}> KiVi</span> is a phygital platform in the area of agri supply chain and financing.
             </span>
         ),
         caseImage: '',
@@ -131,7 +131,7 @@ const mobileCustomerSuccess =
     {
         id: 'content7',
         title:"Ecommerce",
-        activeIcon:"/caseStudies/eCom_icon_blue.svg",
+        activeIcon:"/caseStudies/ecom_icon_blue.svg",
         inActiveIcon:"/caseStudies/ecom_icon.svg",
         caseTitle: 'E-Commerce for Seasonal Produce',
         caseTitleContent: (

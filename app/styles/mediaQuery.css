@@ -367,7 +367,7 @@ a{
   }
 
   .firstPara {
-    font-family: var(--founders-desk-font);
+    /* font-family: var(--founders-desk-font); */
     font-size: 18px;
     text-align: justify;
     /* line-height: normal; */
@@ -375,14 +375,14 @@ a{
 
 
   .secondPara {
-    font-family: var(--founders-desk-font);
+    /* font-family: var(--founders-desk-font); */
     font-size: 18px;
     text-align: justify;
 
   }
 
   .thirdPara {
-    font-family: var(--founders-desk-font);
+    /* font-family: var(--founders-desk-font); */
     font-size: 18px;
     text-align: justify;
   }

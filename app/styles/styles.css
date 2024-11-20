@@ -920,21 +920,21 @@ ul {
 }
 
 .firstPara {
-  font-family: var(--founders-desk-font);
+  /* font-family: var(--founders-desk-font); */
   font-size: 22px;
   text-align: justify;
 }
 
 
 .secondPara {
-  font-family: var(--founders-desk-font);
+  /* font-family: var(--founders-desk-font); */
   font-size: 22px;
   text-align: justify;
 
 }
 
 .thirdPara {
-  font-family: var(--founders-desk-font);
+  /* font-family: var(--founders-desk-font); */
   font-size: 22px;
   text-align: justify;
 }

@@ -202,7 +202,7 @@ useEffect(()=>{
             <div id="portfolioDetails" className="fontFamily">
               <div className="caseDetails_mobile">
                 <div className="caseHeader_mobile">
-                  <div className="caseHeaderTitle_mobile flex flex-wrap pl-5">
+                  <div className="caseHeaderTitle_mobile flex flex-wrap">
                    <h1 className='text-center'> {selectedPage[0].caseTitle}</h1>
                   </div>
                   <div className="caseHeaderIcon_mobile pt-5 pb-5">
