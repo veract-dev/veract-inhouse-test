@@ -70,7 +70,7 @@ const mobileCustomerSuccess =
                 <span style={{ color: '#4285F4', fontWeight:'bold' }}>Data Center Mart</span> is an initiative of IBITS.
             </span>
         ),
-        caseImage: '/caseStudies/DataCenter_img.svg',
+        caseImage: '/webpImages/DCM.webp',
         challenges: 'Challenged with creating a comprehensive platform tailored specifically for the data center industry including post content, comment, like, and share within the community, with a integrated marketplace for products and services and a directory of suppliers specializing in data center solutions.',
         solution: 'Developed a robust e-commerce  and social  platform tailored. The site features a robust backend system for managing product listings and user accounts. It includes functionalities like marketplace, quote requests, product filtering, and content management.',
         services: ['Design Software architecture','Technology consulting' ,'Front end development','Back end development','Deployment'],
@@ -160,7 +160,7 @@ const mobileCustomerSuccess =
                 <span style={{ color: '#4285F4', fontWeight:'bold' }}>Rajdeep</span> is a distributor of industrial products with multiple principals, multiple products, in multiple locations.
             </span>
         ),
-        caseImage: '/webpImages/sales.webp',
+        caseImage: '/webpImages/CRM.webp',
         challenges: 'Salesman attrition, inconsistent data, quotation production and reporting were the client’s pain concerns. Customer was searching for a solution that would operate with SAP integration and fit into their usual routine.',
         solution: 'Veract created a mobile and online application that seamlessly integrated with the customers existing software.',
         services: ['Software architecture','Technology consulting' ,'Software Development','Deployment'],
