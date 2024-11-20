@@ -224,7 +224,7 @@ const mobileCustomerSuccess =
         inActiveIcon:"/caseStudies/thermal_gray_icon.svg",
         caseTitle: 'Infrared Thermography',
         caseTitleContent: 'The Institute of Buffalo Science focuses on improving buffalo health monitoring by tracking key parameters and mapping udder thermal profiles to detect early onset of mastitis in dairy animals.',
-        caseImage: '/caseStudies/thermal-img.svg',
+        caseImage: '/webpImages/THERMAL.webp',
         challenges: 'Integration of the thermal imaging camera with the monitoring system and IOT. Ensuring real-time data capture and processing. Compatibility between the camera hardware and software solutions. Reliable data transfer protocols to minimize latency.',
         solution: 'Software Development: Created custom software for real-time analysis and visualization of udder thermal profiles and camera control through a user-friendly interface.',
         services: ['Software architecture','Technology consulting' ,'Frontend development','Backend Development','Deployment'],

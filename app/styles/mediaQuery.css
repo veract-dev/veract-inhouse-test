@@ -237,6 +237,7 @@ a{
 
   .nav-list.MediaHidden {
     /* display:none; */
+    -webkit-transform: translateX(1000px);
     transform: translateX(1000px);
     transition: 1.5s ease;
   }
@@ -245,6 +246,7 @@ a{
     transform: translateX(0);
     background: black;
     transition: 1.5s ease;
+    -webkit-transform: translateX(0);
   }
 
   .nav-item.open {
