@@ -64,6 +64,12 @@ useEffect(()=>{
         mobileCustomerSuccess.filter((item) => item.id === 'content1') as MobileCustomerSuccessProps[]
       );
     }
+    if(pathname.includes("machinevision")){
+      setActivePage("content2");
+      setSelectedPage(
+        mobileCustomerSuccess.filter((item) => item.id === 'content2') as MobileCustomerSuccessProps[]
+      );
+    }
     if(pathname === "/MobileCaseStudy/health/"){
       setActivePage("content3")
       setSelectedPage(
@@ -84,6 +90,9 @@ useEffect(()=>{
     }
     if(pathname === "/MobileCaseStudy/audit/" ){
       setActivePage("content9")
+      setSelectedPage(
+        mobileCustomerSuccess.filter((item) => item.id === 'content9') as MobileCustomerSuccessProps[]
+      );
     }
   }
 },[])
