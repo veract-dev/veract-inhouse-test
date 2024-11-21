@@ -98,10 +98,15 @@ useEffect(()=>{
 },[])
 
   const handleClick = (id: string) => {
+    const buttonRef = document.getElementById(id);
+    
+    buttonRef?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'center'
+    });
+    
     setActivePage(id);
-    setSelectedPage(
-      mobileCustomerSuccess.filter((item) => item.id === id) as MobileCustomerSuccessProps[]
-    );
   };
 
   console.log(selectedPage);
@@ -126,6 +131,13 @@ useEffect(()=>{
                      ${
                        item.id === activePage ? "text-blue" : "text-gray-400"
                      } cursor-pointer`}
+                    ref={item.id === activePage ? (el) => {
+                      el?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'nearest',
+                        inline: 'center'
+                      });
+                    } : null}
                   >
                     <img
                     style={{width: item.id === "content1" ? '1.8rem': "1.5rem", height: item.id === "content1" ? '1.8rem' : "1.5rem", margin: item.id === "content1" ? "0" : "0.2rem"}}
