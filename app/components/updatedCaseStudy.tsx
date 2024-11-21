@@ -113,8 +113,8 @@ export default function UpdatedCaseStudy() {
         {
             id: 'content10',
             title: 'Fin Tech',
-            titleImage: '/updatedCaseStudiesIcon/finTech_inActive.svg',
-            selectedTitleImage: '/updatedCaseStudiesIcon/finTech_active.svg',
+            titleImage: '/updatedCaseStudiesIcon/finTechInactive.svg',
+            selectedTitleImage: '/updatedCaseStudiesIcon/finTechWhite.svg',
             hasAi: false,
         },
         {

@@ -199,8 +199,8 @@ const mobileCustomerSuccess =
     {
         id: 'content10',
         title:"Fintech",
-        activeIcon:"/updatedCaseStudiesIcon/finTech_blue.svg",
-        inActiveIcon:"/updatedCaseStudiesIcon/finTech_inActive.svg",
+        activeIcon:"/updatedCaseStudiesIcon/finTechActivePurple.svg",
+        inActiveIcon:"/updatedCaseStudiesIcon/finTechInactive.svg",
         caseTitle: 'Credit Risk Assessment and Risk Profiling',
         caseTitleContent: (
             <span>
