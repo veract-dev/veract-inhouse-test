@@ -77,9 +77,15 @@ export default function TopnavBar() {
     
   }
   const handleNavList=()=>{
-    setTimeout(() => {
-      setIsLoaded(true)
-    }, 1000);
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth <= 768) {
+        setTimeout(()=>{
+          setIsLoaded(true);
+        },500)
+      }else{
+        setIsLoaded(true);
+      }
+    }
   }  
 
   useEffect(() => {
@@ -130,8 +136,9 @@ console.log("pathname", pathname)
                 </div> */}
 
         <nav className="pt-4 pb-4">
+          {isLoaded &&
           <ul >
-            <div className={`nav-list ${isLoaded ?(isOpen ? "open" : "MediaHidden"):"" }`}>
+            <div className={`nav-list ${isOpen ? "open" : "MediaHidden" }`}>
               <div className="flex nav-list fontFamilyNav  navFonts md:gap-10">
                 <div className="w-full">
                 <li className={`nav-item ${isOpen ? "visible" : "MediaHidden"} ${activeSection === "Home" ? "active" : ""}`}>
@@ -209,6 +216,7 @@ console.log("pathname", pathname)
 
             </div>
           </ul>
+          }
         </nav>
         <div className="hamburger-icon " onClick={handleToggle}>
           <div className={`bar ${isOpen ? 'open' : ''}`}></div>

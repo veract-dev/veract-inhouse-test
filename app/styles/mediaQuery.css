@@ -133,8 +133,7 @@ a{
     justify-content: right;
     padding-left: 6%;
     font-size: 28px;
-    padding-top: 4%;
-    visibility: hidden;
+    padding-top: 4%
   }
 
   .bar {
@@ -238,14 +237,12 @@ a{
 
   .nav-list.MediaHidden {
     /* display:none; */
-    visibility: visible;
     -webkit-transform: translateX(1000px);
     transform: translateX(1000px);
     transition: 1.5s ease;
   }
 
   .nav-list.open {
-    visibility: visible;
     transform: translateX(0);
     background: black;
     transition: 1.5s ease;
