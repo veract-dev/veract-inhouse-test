@@ -79,7 +79,7 @@ export default function Casestudies() {
         {
             id: 'content4',
             img: "/portfolio/socialCaseStudy.svg",
-            heading: "Industrial Platform",
+            heading: "INDUSTRIAL PLATFORM",
             desc: "Specialized social platform connecting professionals in the data center industry for collaboration and networking."
         },
         {
@@ -360,7 +360,7 @@ export default function Casestudies() {
                             <div className='flex flex-row  justify-between mb-2'>
                                 <div className='flex flex-row'>
                                     <div className='w-8 '><img src="/portfolio/socialCaseStudy.svg" /></div>
-                                    <div className='item-title flex textColorLogo pl-4' >SOCIAL</div>
+                                    <div className='item-title flex textColorLogo pl-4' >INDUSTRIAL PLATFORM</div>
                                 </div>
                                 <div className='infoIconMobile'>
                                     {/* <Link href="/MobileCaseStudy/industrialPlatform"> */}

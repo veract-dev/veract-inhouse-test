@@ -136,7 +136,7 @@ export default function UpdatedCaseStudy() {
     ),
             stampImage: "",
             caseImage: '/updatedCaseStudiesIcon/edBookPurple.svg',
-            challenges: 'A custom-built, voice-to-text enabled personalized AI coach',
+            challenges: 'A custom-built, voice-to-text enabled personalized AI coach.',
             challengePoints: ' ',
             solution: 'Veract team designed and developed a desktop application with integrated voice-to-text functionality, implementing advanced noise cancellation features and incorporating seamless chat capabilities.',
             solutionPoints: '',
@@ -188,7 +188,7 @@ export default function UpdatedCaseStudy() {
             ),
             stampImage: "",
             caseImage: '/updatedCaseStudiesIcon/wellnessPurple.svg',
-            challenges: 'The founders of Anyo were looking for a one-stop shop for technical advice and development of their live chat-enabled platform with streaming audio, video and chatbots',
+            challenges: 'The founders of Anyo were looking for a one-stop shop for technical advice and development of their live chat-enabled platform with streaming audio, video and chatbots.',
             challengePoints: '',
             solution: `Within five months, Veract's team of architects and developers successfully designed and deployed:  four online portals, the Anyo mobile app. Key technical decisions included:  architecture selection, framework choice.`,
             solutionPoints: '',
@@ -220,7 +220,7 @@ export default function UpdatedCaseStudy() {
             caseTitle: 'Data Center Innovation Platform',
             caseTitleContent: (
                 <span>
-                    <span style={{ color: '#4285F4', fontWeight:'bold' }}>Data Center Mart</span> is an initiative of IBITS
+                    <span style={{ color: '#4285F4', fontWeight:'bold' }}>Data Center Mart</span> is an initiative of IBITS.
                 </span>
             ),
             stampImage: "",
@@ -273,7 +273,7 @@ export default function UpdatedCaseStudy() {
             ),
             stampImage: "",
             caseImage: '/updatedCaseStudiesIcon/agriTechPurple.svg',
-            challenges: 'Kivi was seeking a development partner to fully assume responsibility for the design, development and implementation of Vision to text, Map interfaces for loan eligibility data, loan documents automation, dashboards with multiple authentication levels',
+            challenges: 'Kivi was seeking a development partner to fully assume responsibility for the design, development and implementation of Vision to text, Map interfaces for loan eligibility data, loan documents automation, dashboards with multiple authentication levels.',
             challengePoints: '',
             solution: 'Veract architects set up the platform and assumed complete ownership of the product and made critical choices of architecture, framework to enable rapid development.',
             solutionPoints: '',
@@ -382,7 +382,7 @@ export default function UpdatedCaseStudy() {
                 </span>
             ),
             stampImage: "",
-            caseImage: '/updatedCaseStudiesIcon/finTech_blue.svg',
+            caseImage: '/updatedCaseStudiesIcon/fintechActivePurple.svg',
             challenges: 'For the construction of their investor portal, Northern Arc Capital required a team with technical and financial domain experience. They needed to reduce risk by using risk analytics, risk profiles, etc.',
             challengePoints: ' ',
             solution: 'Veract implemented risk profiling in their investor tracking portal by fusing their core development skills with their expertise in financial domain.',

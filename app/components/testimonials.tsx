@@ -106,13 +106,13 @@ export default function Testimonials() {
                   <div className="quotesVisibleMobileName"><span className='title whitespace-nowrap'>{item.name} - {item.designation}, </span><span className='title highlight '>{item.company}</span></div>
                 </div>
               </div>
-              <div className="flex flex-col w-4/5">
+              <div className="flex flex-col w-[86%]">
                 <div className={`scroll-animationY  ${isVisible ? ' visibleFounderContent' : ''}`}>
                   <div className="flex flex-row mb-10 items-center">
-                    <div className="quotesVisible"><i className="quotes"></i></div>
+                    <div className="quotesVisible "><i className="quotes"></i></div>
                     <div className="quotesVisible"><span className='title'>{item.name} - {item.designation}, </span><span className='title highlight'>{item.company}</span></div>
                   </div>
-                  <div className="quotesVisibleMobile"><i className="quotes"></i></div>
+                  <div className="quotesVisibleMobile quotesTopMobile"><i className="quotes"></i></div>
                   <div className="text ml-10">
                     <p>{item.content}</p>
                   </div>

@@ -229,7 +229,7 @@ export default function Contacts() {
               <p className="text-blk input-title">
                 FIRST NAME
               </p>
-              <input className="input" id="ijowk" name="FirstName" placeholder="Enter first name..." 
+              <input className="input" id="ijowk" name="FirstName" placeholder="Enter first name" 
                 value={fname}
                 onChange={e => setfName(e.target.value)}
                 required/>
@@ -238,7 +238,7 @@ export default function Contacts() {
               <p className="text-blk input-title">
                 LAST NAME
               </p>
-              <input className="input" id="indfi" name="Last Name" placeholder="Enter last name..."
+              <input className="input" id="indfi" name="Last Name" placeholder="Enter last name"
               value={lname}
               onChange={e => setlName(e.target.value)}
               />
@@ -247,7 +247,7 @@ export default function Contacts() {
               <p className="text-blk input-title">
                 EMAIL
               </p>
-              <input className="input" id="ipmgh" name="Email" placeholder="Enter email..."  
+              <input className="input" id="ipmgh" name="Email" placeholder="Enter email"  
               value={email}
               onChange={e => setEmail(e.target.value)}
               required/>
@@ -256,7 +256,7 @@ export default function Contacts() {
               <p className="text-blk input-title">
                 PHONE NUMBER
               </p>
-              <input className="input" id="imgis" name="PhoneNumber" placeholder="Enter phone no..." type='number' 
+              <input className="input" id="imgis" name="PhoneNumber" placeholder="Enter phone no" type='number' 
               value={phone}
               onChange={e => setPhone(e.target.value)}
               required/>
@@ -265,7 +265,7 @@ export default function Contacts() {
               <p className="text-blk input-title">
                 WHAT DO YOU HAVE IN MIND
               </p>
-              <textarea className="textinput" id="i5vyy" name="query" placeholder="Enter query..."  
+              <textarea className="textinput" id="i5vyy" name="query" placeholder="Enter query"  
               value={text}
               onChange={e => setText(e.target.value)}
               required />

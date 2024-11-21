@@ -37,7 +37,18 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        <meta name="format-detection" content="telephone=no" />
+        <style>{`
+          ::selection {
+            background: transparent;
+          }
+          ::-moz-selection {
+            background: transparent;
+          }
+        `}</style>
+      </head>
+      <body className={`${inter.className}`}>
         {/* <CasestudiesDetails /> */}
         {/* <BouncingBall /> */}
         {children}</body>

@@ -13,7 +13,7 @@ import Footer from '../app/components/footer';
 import FoundersDesk from '../app/components/foundersDesk';
 import { useEffect } from 'react';
 // import { useRouter } from 'next/router';
-import { usePathname, useSearchParams,useRouter } from 'next/navigation'
+import { usePathname, useSearchParams, useRouter } from 'next/navigation'
 import "../app/styles/styles.css"
 // import "../app/globals.css"
 import "../app/styles/mediaQuery.css"
@@ -24,23 +24,23 @@ const Index = () => {
   console.log(searchParams?.get("sectionId"));
   const sectionId = searchParams?.get("sectionId");
 
-  console.log("Inital section ID : "+sectionId)
+  console.log("Inital section ID : " + sectionId)
 
-  const scrollToElement=(sectionId:string)=>{
+  const scrollToElement = (sectionId: string) => {
     const section = document.getElementById(sectionId);
 
-    
+
     console.log("ROUTER");
 
-  if (section) {
-    section.scrollIntoView({behavior: 'smooth'});
-    
-    
-    
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+
+
+
+    }
+
   }
-    
-  }
-  if(sectionId){
+  if (sectionId) {
     console.log("ROUTER");
 
     scrollToElement(sectionId)
@@ -49,53 +49,53 @@ const Index = () => {
 
   useEffect(() => {
     // if(router.query){
-let scroll =   searchParams?.get("sectionId");
-  console.log("scroll ID : "+scroll);
-  if(scroll){
-    scrollToElement(scroll);
-    window.history.replaceState(null, '', '/')
-  
+    let scroll = searchParams?.get("sectionId");
+    console.log("scroll ID : " + scroll);
+    if (scroll) {
+      scrollToElement(scroll);
+      window.history.replaceState(null, '', '/')
 
-  }
+
+    }
 
     //}
-}, []);
-    // const img = require("../public/images/backgroundImg.jpg")
+  }, []);
+  // const img = require("../public/images/backgroundImg.jpg")
 
-    return (
-        <>
-            <div id="Home">
-            <div className="mainPage fontFamily flex">
-              <TopnavBar />
-              <Banner />
-            </div>
-            <div>
-            <Clients />
-            </div>
-            <div>
-              <FoundersDesk />
-            </div>
-            <div >
-            <Services />
-            </div>
-            <div  >
-              <Casestudies />
-            </div>
-            <div >
-              <Testimonials />
-            </div>
-            <div>
-            <Contacts />
-            </div>
-            <div>
-              < VeractDetails />
-            </div>
-            <div>
-              < Footer/>
-            </div>
+  return (
+    <>
+      <div id="Home" className='globalHome select-none'>
+        <div className="mainPage fontFamily flex">
+          <TopnavBar />
+          <Banner />
         </div>
-        </>
-    )
+        <div>
+          <Clients />
+        </div>
+        <div>
+          <FoundersDesk />
+        </div>
+        <div >
+          <Services />
+        </div>
+        <div  >
+          <Casestudies />
+        </div>
+        <div >
+          <Testimonials />
+        </div>
+        <div>
+          <Contacts />
+        </div>
+        <div>
+          < VeractDetails />
+        </div>
+        <div>
+          < Footer />
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default Index;

@@ -361,7 +361,7 @@ a{
   }
 
   .founderProfileWidth {
-    width: 7rem;
+    width: 9rem;
   }
 
   .left-column {
@@ -370,23 +370,25 @@ a{
 
   .firstPara {
     /* font-family: var(--founders-desk-font); */
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
+    line-height: 1;
     /* line-height: normal; */
   }
 
 
   .secondPara {
     /* font-family: var(--founders-desk-font); */
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
-
+    line-height: 1;
   }
 
   .thirdPara {
     /* font-family: var(--founders-desk-font); */
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
+    line-height: 1; 
   }
 
   /*---------------------services ------------------------*/
@@ -550,7 +552,13 @@ a{
     font-size: 20px;
     color: var(--primary-colour);
     font-weight: 500;
-    padding-left: 7%;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+  }
+  .quotesTopMobile{
+    padding-left: 5%;
+    padding-bottom: 3%;
   }
 
   .challengesContent_mobile {

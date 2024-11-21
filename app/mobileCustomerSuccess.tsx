@@ -8,11 +8,11 @@ const mobileCustomerSuccess =
         caseTitle: 'AI-enabled EdTech Platform',
         caseTitleContent: (
             <span>
-                <span style={{ color: '#4285F4', fontWeight:'bold' }}>Evollve</span> is an edtech platform that revolutionizes augmented learning
+                <span style={{ color: '#4285F4', fontWeight:'bold' }}>Evo11ve</span> is an edtech platform that revolutionizes augmented learning
             </span>
         ),
         caseImage: '/webpImages/eVO11VE.webp',
-        challenges: 'A custom-built, voice-to-text enabled personalized AI coach',
+        challenges: 'A custom-built, voice-to-text enabled personalized AI coach.',
         solution: 'Veract team designed and developed a desktop application with integrated voice-to-text functionality, implementing advanced noise cancellation features and incorporating seamless chat capabilities.',
         services: ['Software architecture', 'Technology consulting', 'Front end development', 'Back end development', 'Deployment'],
         platform: ['Desktop', 'Web'],
@@ -76,7 +76,7 @@ const mobileCustomerSuccess =
         services: ['Design Software architecture','Technology consulting' ,'Front end development','Back end development','Deployment'],
         platform: ['Web'],
         techstack: ['Next JS','Mongo DB','Node JS'],
-        clientSpeakName: "Bijoy KT",
+        clientSpeakName: "Bijoy KT - CEO",
         clientSpeakCmp: "Data Center Mart",
         clientSpeakDesc: "Our engagement with veract for Datacenter Mart project has been a fantastic experience. The team was very prompt and supportive throughout the project. We are very happy with the outcome and we expect to start the second phase soon. This is a very complex project because we did not have an exact comparison to show them but they grasped the requirements well and was able to deliver what we expected.",
     },
