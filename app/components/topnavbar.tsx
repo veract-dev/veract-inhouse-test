@@ -65,6 +65,7 @@ export default function TopnavBar() {
   }
   const [isVisible, setIsVisible] = useState(false);
   const [isOpen, setIsopen] = useState(false);
+  const [isLoaded,setIsLoaded]=useState(false);
 
   const handleToggle = (e: { stopPropagation: () => void; }) => {
     if (typeof window !== 'undefined') {
@@ -75,15 +76,19 @@ export default function TopnavBar() {
     }
     
   }
-  
+  const handleNavList=()=>{
+    setTimeout(() => {
+      setIsLoaded(true)
+    }, 1000);
+  }  
 
   useEffect(() => {
+    handleNavList()
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const triggerPoint = window.innerHeight * 0.05; // Adjust this value as needed
       setIsVisible(scrollTop > triggerPoint);
     };
-    
 
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -126,7 +131,7 @@ console.log("pathname", pathname)
 
         <nav className="pt-4 pb-4">
           <ul >
-            <div className={`nav-list ${isOpen ? "open" : "MediaHidden"}`}>
+            <div className={`nav-list ${isLoaded ?(isOpen ? "open" : "MediaHidden"):"" }`}>
               <div className="flex nav-list fontFamilyNav  navFonts md:gap-10">
                 <div className="w-full">
                 <li className={`nav-item ${isOpen ? "visible" : "MediaHidden"} ${activeSection === "Home" ? "active" : ""}`}>
