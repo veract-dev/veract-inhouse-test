@@ -107,6 +107,9 @@ useEffect(()=>{
     });
     
     setActivePage(id);
+    setSelectedPage(
+      mobileCustomerSuccess.filter((item) => item.id === id) as MobileCustomerSuccessProps[]
+    );
   };
 
   console.log(selectedPage);
