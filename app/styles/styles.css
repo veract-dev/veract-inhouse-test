@@ -740,7 +740,7 @@ ul {
 }
 
 .nav-list {
-  display: flex;
+  display: done;
   transition: 1.5s;
 
 }
@@ -1759,8 +1759,11 @@ ul {
 
 .scroll-animationY {
   opacity: 0;
+  backface-visibility: hidden;
   transform: translateY(20px);
   -webkit-font-smoothing: antialiased;
+  will-change: opacity, transform;
+  height: auto;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease;
   /* animation:slideInFromBottom 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; */
 }
