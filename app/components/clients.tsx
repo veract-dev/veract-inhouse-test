@@ -86,25 +86,25 @@ export default function Clients() {
     // {id: "9", image: "/resizedLogo/myTrackie-logo.png", largeImage: false }, {id: "10", image: "/resizedLogo/kivi-logo.png", largeImage: false },
     // {id: "11", image: "/resizedLogo/technoweld-logo.png", largeImage: false }
 
-    { id: "1", image: "/clients/anyo-logo.svg" },
+    { id: "1", image: "/clientsWebp/anyo-logo.webp" },
 
-    { id: "2", image: "/clients/mako-logo.svg" },
-    { id: "3", image: "/clients/vishnu-logo.svg" },
+    { id: "2", image: "/clientsWebp/mako-logo.webp" },
+    { id: "3", image: "/clientsWebp/vishnu-logo.webp" },
 
-    { id: "4", image: "/clients/myTrackie-logo.svg" },
-    { id: "5", image: "/clients/kivi-logo.svg" },
+    { id: "4", image: "/clientsWebp/myTrackie-logo.webp" },
+    { id: "5", image: "/clientsWebp/kivi-logo.webp" },
 
-    { id: "6", image: "/clients/ia-logo.svg" },
-    { id: "7", image: "/clients/india-wasted-logo.svg" },
+    { id: "6", image: "/clientsWebp/ia-logo.webp" },
+    { id: "7", image: "/clientsWebp/india-wasted-logo.webp" },
 
-    { id: "8", image: "/clients/northern-arc-logo.svg" },
-    { id: "9", image: "/clients/rajdeep-logo.svg" },
+    { id: "8", image: "/clientsWebp/northern-arc-logo.webp" },
+    { id: "9", image: "/clientsWebp/rajdeep-logo.webp" },
 
-    { id: "10", image: "/clients/suyash-logo.svg" },
-    { id: "11", image: "/clients/technoweld-logo.svg" },
-    { id: "12", image: "/clients/evo11ve_logo.svg" },
-    { id: "13", image: "/clients/beanstalk_logo.svg" },
-    { id: "13", image: "/clients/ibits_logo.svg" },
+    { id: "10", image: "/clientsWebp/suyash-logo.webp" },
+    { id: "11", image: "/clientsWebp/technoweld-logo.webp" },
+    { id: "12", image: "/clientsWebp/evo11ve_logo.webp" },
+    { id: "13", image: "/clientsWebp/beanstalk_logo.webp" },
+    { id: "13", image: "/clientsWebp/ibits_logo.webp" },
 
   ];
   // image:{"mako.svg", "rajdeep.svg", "suyash.svg", "anyoBg.png", "myTrackieBg.png","nothernArcBg.png"
