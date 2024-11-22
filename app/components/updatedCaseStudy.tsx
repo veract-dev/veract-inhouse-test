@@ -131,7 +131,7 @@ export default function UpdatedCaseStudy() {
             caseTitle: ' AI-enabled Edtech Platform',
             caseTitleContent: (
         <span>
-            <span style={{ color: '#4285F4', fontWeight:'bold' }}>Evollve</span> is an edtech platform that revolutionizes augmented learning
+            <span style={{ color: '#4285F4', fontWeight:'bold' }}>Evo11ve</span> is an edtech platform that revolutionizes augmented learning
         </span>
     ),
             stampImage: "",

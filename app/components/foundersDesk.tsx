@@ -36,7 +36,7 @@ export default function FoundersDesk() {
                 <div ref={sectionRef} className={`scroll-animationY ${isVisible ? 'visiblesectionName' : ''}`}>
                 <div className="flex items-center justify-center whitespace-nowrap">
                     <hr className='separator'></hr>
-                    <div className=" section-title whitespace-nowrap mobilePaddingHeader"><span className="section-title-highlight pr-2">Founder's</span>desk</div>
+                    <div className=" section-title mobilePaddingHeader flex flex-row gap-2"><span className="section-title-highlight pl-2 font-semibold">Founder's</span>desk</div>
                     <hr className='separator'></hr>
                 </div>
                 </div>

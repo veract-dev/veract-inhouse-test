@@ -130,7 +130,7 @@ const mobileCustomerSuccess =
     },
     {
         id: 'content7',
-        title:"Ecommerce",
+        title:"E-commerce",
         activeIcon:"/caseStudies/ecom_icon_blue.svg",
         inActiveIcon:"/caseStudies/ecom_icon.svg",
         caseTitle: 'E-Commerce for Seasonal Produce',

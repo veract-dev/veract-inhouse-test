@@ -132,8 +132,8 @@ export default function Casestudies() {
                                                     <div className='w-8 '><img src={item.img} /></div>
                                                     <div className='item-title flex textColorLogo pl-4 '>{item.heading}</div>
                                                 </div>
-                                                <div className=''>
-                                                    <img src="/images/info.png" className='w-6 h-6'></img>
+                                                <div className='ml-4'>
+                                                    <img src="/images/info.png" className='w-6 h-6 '></img>
                                                 </div>
                                             </div>
                                             <div className='flex flex-row item-desc manufacturingDesc'>

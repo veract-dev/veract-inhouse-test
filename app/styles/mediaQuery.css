@@ -372,7 +372,7 @@ a{
     /* font-family: var(--founders-desk-font); */
     font-size: 16px;
     text-align: justify;
-    line-height: 1;
+    line-height: 1.25;
     /* line-height: normal; */
   }
 
@@ -381,16 +381,18 @@ a{
     /* font-family: var(--founders-desk-font); */
     font-size: 16px;
     text-align: justify;
-    line-height: 1;
+    line-height: 1.5;
   }
 
   .thirdPara {
     /* font-family: var(--founders-desk-font); */
     font-size: 16px;
     text-align: justify;
-    line-height: 1; 
+    line-height: 1.5; 
   }
-
+.item-title{
+  font-size: 16px;
+}
   /*---------------------services ------------------------*/
   .serviceImageWidth {
     width: 8rem;

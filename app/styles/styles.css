@@ -1244,8 +1244,11 @@ ul {
   font-size: 32px;
   line-height: 60px;
   margin: 0 0 15px 0;
-  font-weight: 600;
+  font-weight: 700 !important;
+  -webkit-font-weight: 700;
   white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .section-desc {
@@ -1327,7 +1330,12 @@ ul {
 .fintechHover:hover .fintechDesc{
   color:var(--secondary-colour);
 }
-
+@supports (-webkit-touch-callout: none) {
+  .section-title,
+  .section-title-highlight {
+    -webkit-text-stroke: 0.2px;
+  }
+}
 /* .................  Testimonials page ........................................ */
 
 .rounded-image {
