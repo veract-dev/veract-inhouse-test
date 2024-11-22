@@ -2,6 +2,12 @@ import '../styles/styles.css';
 import '../styles/mediaQuery.css';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { FaLocationDot } from "react-icons/fa6";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+// import '../styles/mediaQuery.css';
+// import '../styles/styles.css';
+// import '../styles/mediaQuery.css';
+import { FaFacebook, FaLinkedin, FaInstagram, FaTwitter , FaWhatsapp} from 'react-icons/fa';
+
 
 export default function VeractDetails() {
   return (
@@ -37,7 +43,16 @@ export default function VeractDetails() {
                 <FaPhoneAlt size={18}  color="#4285F4" />
                 <a href="tel:+919962837650">+91 99628 37650</a>
               </div>
-            </div>  
+            </div> 
+            <div className='veractTags'> 
+              <div className=" flex gap-4 mt-4 md:mt-0 w-[100%] justify-end ">
+              {/* <a href="#" className="text-[#4285F4]"><FaFacebook size={20} /></a>
+              <a href="#" className="text-[#4285F4]"><FaTwitter size={20} /></a> */}
+              <a href="https://whatsapp.com/channel/0029VahNUEB90x31HeDatt2o" target='_blank' className="text-[#4285F4]"><FaWhatsapp size={20} /></a>
+              <a href="https://www.linkedin.com/company/veract-consultancy-private-limited/" target='_blank' className="text-[#4285F4]"><FaLinkedin size={20} /></a>
+              {/* <a href="#" className="text-[#4285F4]"><FaInstagram size={20} /></a> */}
+              </div>
+          </div>
           </div>
         </div>
       </div>

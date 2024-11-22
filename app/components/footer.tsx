@@ -11,7 +11,7 @@ export default function Footer(){
           <div className="text-center md:text-left">
             <p className="text-sm md:text-base">&copy; {new Date().getFullYear()} Veract Consultancy Pvt. Ltd. All Rights Reserved.</p>
           </div>
-          <div className="flex gap-4 mt-4 md:mt-0">
+          <div className="footerTags flex gap-4 mt-4 md:mt-0">
             {/* <a href="#" className="text-[#4285F4]"><FaFacebook size={20} /></a>
             <a href="#" className="text-[#4285F4]"><FaTwitter size={20} /></a> */}
             <a href="https://whatsapp.com/channel/0029VahNUEB90x31HeDatt2o" target='_blank' className="text-[#4285F4]"><FaWhatsapp size={20} /></a>

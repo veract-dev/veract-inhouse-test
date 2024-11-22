@@ -1235,6 +1235,9 @@ ul {
 .case-studies-content-top {
   margin-bottom: 30px;
 }
+.veractTags{
+  display: none;
+}
 
 .section-title {
   font-family: var(tertiary-font);

@@ -62,7 +62,7 @@ export default function Casestudies() {
             id: 'content1',
             img: "/portfolio/Group.svg",
             heading: "EDTECH",
-            desc: "AI driven e learning application with state of the art voice to text and large language model capabilities"
+            desc: "AI driven e learning application with state of the art voice to text and large language model capabilities."
         },
         {
             id: 'content3',

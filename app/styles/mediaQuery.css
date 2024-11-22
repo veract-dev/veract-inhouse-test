@@ -66,7 +66,12 @@ a{
     /* border: 2px solid var(--primary-colour); */
     /* border-radius: 50%; */
   }
-
+  .veractTags{
+    display: flex;
+  }
+  .footerTags{
+    display: none;
+  }
   .customTextLandingPage {
     padding-left: 0%;
     padding-top: 10%;
