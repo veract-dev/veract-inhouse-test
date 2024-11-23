@@ -25,36 +25,36 @@ export default function VeractDetails() {
     }
   ]
   return (
-    <div className="flex flex-row justify-evenly py-[2rem] fontFamily bg-black text-white" >
-      <div className='flex flex-col gap-[1rem]'>
-        <img src='/logo/footer_logo.svg' alt='veract logo' className='' />
-        <div className='flex flex-row gap-[1rem]'>
-          <a href="https://whatsapp.com/channel/0029VahNUEB90x31HeDatt2o" target='_blank' className="transform transition-transform duration-300 hover:scale-110 cursor-pointer">
+    <div className="footerContainer" >
+      <div className='veractDetailsContainer'>
+        <img src='/logo/footer_logo.svg' alt='veract logo' className='footerLogo' />
+        <div className='socialMediaSection'>
+          <a href="https://whatsapp.com/channel/0029VahNUEB90x31HeDatt2o" target='_blank' className="scaleTransition">
             <img src="/logo/footer_whatsapp_logo.svg" alt="" />
           </a>
-          <a href="https://www.linkedin.com/company/veract-consultancy-private-limited/" target='_blank' className="transform transition-transform duration-300 hover:scale-110 cursor-pointer">
+          <a href="https://www.linkedin.com/company/veract-consultancy-private-limited/" target='_blank' className="scaleTransition">
             <img src="/logo/footer_linkedIn_logo.svg" alt="" />
           </a>
         </div>
       </div>
       {officeDetails.map((item: any, index: any) => (
-        <div key={index} className='flex flex-col gap-[1rem]'>
-          <div className='text-[14px] text-white font-semibold'>{item.officeDetailsHeader}</div>
-          <div className='flex flex-col gap-[0.5rem]'>
+        <div key={index} className='officeDetailsSection'>
+          <div className='footerFont'>{item.officeDetailsHeader}</div>
+          <div className='officeDetailsInnerSection'>
             {item.officeDetailsContent.map((item_inner: any, index_inner: any) => (
               item.id == 3 ? (
                 <div key={index_inner}>
                   {index_inner == 0 && (
-                    <div className='flex flex-row gap-2'>
+                    <div className='contactNo'>
                       {item_inner.map((phone: string, phoneIndex: number) => (
-                        <a className='text-[14px] text-white font-semibold' key={phoneIndex} href={`tel:${phone}`}>{phone}</a>
+                        <a className='footerFont' key={phoneIndex} href={`tel:${phone}`}>{phone}</a>
                       ))}
                     </div>
                   )}
-                  {index_inner == 1 && (<a className='text-[14px] text-white font-semibold' href="mailto:info@veract.io"><span>{item_inner}</span></a>)}
+                  {index_inner == 1 && (<a className='footerFont' href="mailto:info@veract.io"><span>{item_inner}</span></a>)}
                 </div>
               ) : (
-                <div key={index_inner} className='text-[14px] text-white font-semibold'>{item_inner}</div>
+                <div key={index_inner} className='footerFont'>{item_inner}</div>
               )
             ))}
           </div>

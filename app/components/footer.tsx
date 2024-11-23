@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col items-center justify-center bg-black border-t border-[#f2f5f8] border-opacity-30 py-4 text-white">
       <div className="flex flex-col items-center justify-center md:flex-row md:justify-between md:w-full px-6 md:px-20">
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-center w-full">
           <p className="text-sm md:text-base">&copy; {new Date().getFullYear()} Veract Consultancy Pvt. Ltd. All Rights Reserved.</p>
         </div>
         {/* <div className="footerTags flex gap-4 mt-4 md:mt-0">

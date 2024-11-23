@@ -87,7 +87,7 @@ const Index = () => {
         <div>
           <Contacts />
         </div>
-        <div>
+        <div className='veractDetailsLayout'>
           < VeractDetails />
         </div>
         <div>
