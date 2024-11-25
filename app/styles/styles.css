@@ -1452,7 +1452,7 @@ ul {
   bottom: 1%;
   /* width: 16%; */
   /* height: 75vh; */
-  background-color: var(--var(--black-colour)-colour);
+  background-color: var(--black-colour);
   border-radius: 20px;
   transition: all 0.3s ease;
 
