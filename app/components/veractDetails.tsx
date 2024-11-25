@@ -11,17 +11,17 @@ export default function VeractDetails() {
     {
       id: 1,
       officeDetailsHeader: 'Registered office:',
-      officeDetailsContent: ['17, First street, Tansi nagar,', 'Velacherry, Chennai - 600 042']
+      officeDetailsContent: ['17, First street, Tansi nagar,', 'Velachery, Chennai - 600 042']
     },
     {
       id: 2,
       officeDetailsHeader: 'Office location:',
-      officeDetailsContent: ['37, Aspace, Brindavan Street,', 'Srinivasa Nagar, Madipakkam,', 'Chennai - 600091'],
+      officeDetailsContent: ['37, Aspace, Brindavan Street,', 'Srinivasa Nagar, Madipakkam,', 'Chennai - 600 091'],
     },
     {
       id: 3,
-      officeDetailsHeader: 'Contact us ',
-      officeDetailsContent: [['+91 97899 91565', '+91 99628 37650'], 'info@veract.io'],
+      officeDetailsHeader: 'Contact us:',
+      officeDetailsContent: [['+91 97899 91565,', ' +91 99628 37650'], 'info@veract.io'],
     }
   ]
   return (

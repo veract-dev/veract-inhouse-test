@@ -273,7 +273,7 @@ export default function UpdatedCaseStudy() {
             ),
             stampImage: "",
             caseImage: '/updatedCaseStudiesIcon/agriTechPurple.svg',
-            challenges: 'Kivi was seeking a development partner to fully assume responsibility for the design, development and implementation of Vision to text, Map interfaces for loan eligibility data, loan documents automation, dashboards with multiple authentication levels.',
+            challenges: 'KiVi was seeking a development partner to fully assume responsibility for the design, development and implementation of Vision to text, Map interfaces for loan eligibility data, loan documents automation, dashboards with multiple authentication levels.',
             challengePoints: '',
             solution: 'Veract architects set up the platform and assumed complete ownership of the product and made critical choices of architecture, framework to enable rapid development.',
             solutionPoints: '',
