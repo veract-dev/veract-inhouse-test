@@ -1220,7 +1220,7 @@ ul {
 
 .case-studies {
   width: 100%;
-  /* background: var(--case-studies-background-colour); */
+  background: var(--black-colour) !important;
   border-left: 0px;
   border-right: 0px;
   padding-top: 90px;
@@ -2319,9 +2319,10 @@ ul {
   justify-content: space-evenly;
 }
 .footerContainer {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-family: inherit;
