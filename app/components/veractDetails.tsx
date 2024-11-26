@@ -28,6 +28,7 @@ export default function VeractDetails() {
     <div className="footerContainer" >
       <div className='veractDetailsContainer'>
         <img src='/logo/footer_logo.svg' alt='veract logo' className='footerLogo' />
+        <div className='footerLogoText'>ver<span className='textColorLogo'>act</span></div>
         <div className='socialMediaSection'>
           <a href="https://whatsapp.com/channel/0029VahNUEB90x31HeDatt2o" target='_blank' className="scaleTransition">
             <img src="/logo/footer_whatsapp_logo.svg" alt="" />

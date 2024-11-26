@@ -1237,8 +1237,14 @@ a{
 }
 
 .footerLogo {
-  width: 7.5rem;
-  height: 2.5rem;
+ display: none;
+}
+.footerLogoText{
+  display: flex;
+  font-size: 2rem;
+  color: var(--white-text-colour);
+  font-weight: 600;
+  font-family: var(--secondary-font);
 }
 
 }
