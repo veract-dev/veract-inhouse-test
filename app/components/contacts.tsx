@@ -257,7 +257,7 @@ export default function Contacts() {
                     <p className="text-blk input-title">
                       EMAIL
                     </p>
-                    <input className="input" id="ipmgh" name="Email" placeholder="Enter email"
+                    <input type='email' className="input" id="ipmgh" name="Email" placeholder="Enter email"
                       value={email}
                       onChange={e => setEmail(e.target.value)}
                       required />
