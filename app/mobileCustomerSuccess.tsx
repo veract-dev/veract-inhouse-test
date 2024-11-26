@@ -84,7 +84,7 @@ const mobileCustomerSuccess =
         id: 'content5',
         title:"Manufacturing",
         activeIcon:"/mobileCaseStudiesIcons/M_Manufacturing_A.svg",
-        inActiveIcon:"/mobileCaseStudiesIcons/M_MachineVision_IA.svg",
+        inActiveIcon:"/mobileCaseStudiesIcons/manufacturing_IA.webp",
         caseTitle: 'Quality Documentation for Metal Foundry',
         caseTitleContent: 'An automated quality report generation system for Grey Iron and Ductile Iron Foundry.',
         caseImage: '',
