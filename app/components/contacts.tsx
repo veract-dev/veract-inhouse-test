@@ -6,7 +6,7 @@ import '../styles/cube.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
@@ -27,56 +27,66 @@ type Props = {
 export default function Contacts() {
   const [modalOpen, setModalOpen] = useState(false);
 
-    const router = useRouter();  
-  
-    const [isChecked, setIsChecked] = useState(false);
-    const handleCheckboxChange =() =>{
-        setIsChecked(!isChecked);
+  const router = useRouter();
+
+  const [isChecked, setIsChecked] = useState(false);
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  }
+
+  useEffect(() => {
+    if (modalOpen) {
+      setfName('');
+      setlName('');
+      setEmail('');
+      setPhone('');
+      setText('');
     }
-    
-    useEffect(() => {
-      
-      
-    }, []);
-    const handleSubmit = () => {
-      
-      setModalOpen(true);
-    }
-    
+  }, [modalOpen]);
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setModalOpen(true);
+    // setfName('');
+    // setlName('');
+    // setEmail('');
+    // setPhone('');
+    // setText('');
+  }
 
-    const [isVisible, setIsVisible] = useState(false); 
-    
-    // const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-      const [showSuccess, setShowSuccess] = useState(false);
-    
-      const handleShowSuccess = () => {
-        setShowSuccess(true);
-      };
+  const [isVisible, setIsVisible] = useState(false);
 
-      const handleCloseSuccess = () => {
-        setShowSuccess(false);
-      };
+  // const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-      const [fname, setfName] = useState("");
-      const [lname, setlName] = useState("");
-      const [email, setEmail] = useState("");
-      const [phone, setPhone] = useState("");
-      const [text, setText] = useState("");
-   
-    
-    return (
-       
-        <div className=" flex flex-col  contactsMain fontFamilyContacts pt-6">
-            <div className="flex items-center justify-center">
-                <hr className="separator"></hr>
-                <div className='section-title mobilePaddingHeader'>
-                <label className=" section-title-highlight ">GET IN <span className="servicesHeading  ">TOUCH</span></label>
-                </div>
-                <hr className="separator"></hr>
-            </div>
-            {/* old One */}
-            {/*  <div className="flex items-center justify-center pl-28 pr-28 pt-16 pb-16">
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const handleShowSuccess = () => {
+    setShowSuccess(true);
+  };
+
+  const handleCloseSuccess = () => {
+    setShowSuccess(false);
+  };
+
+  const [fname, setfName] = useState("");
+  const [lname, setlName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [text, setText] = useState("");
+
+
+  return (
+
+    <div className=" flex flex-col  contactsMain fontFamilyContacts pt-6">
+      <div className="flex items-center justify-center">
+        <hr className="separator"></hr>
+        <div className='section-title mobilePaddingHeader'>
+          <label className=" section-title-highlight ">GET IN <span className="servicesHeading  ">TOUCH</span></label>
+        </div>
+        <hr className="separator"></hr>
+      </div>
+      {/* old One */}
+      {/*  <div className="flex items-center justify-center pl-28 pr-28 pt-16 pb-16">
             <div className='flex outlineContactUs '>
 
                 <div className="flex flex-row md:gap-4 ">
@@ -122,8 +132,8 @@ export default function Contacts() {
 
             </div>
             </div> */}
-            {/* new one */}
-             {/* <section className="contact_us">
+      {/* new one */}
+      {/* <section className="contact_us">
         <div className="container">
             <div className="row">
                 <div className="col-md-10 offset-md-1">
@@ -174,8 +184,8 @@ export default function Contacts() {
             </div>
         </div>
     </section> */}
-    
-    {/* <section className="map_sec">
+
+      {/* <section className="map_sec">
         <div className="container">
             <div className="row">
                 <div className="col-md-10 offset-md-1">
@@ -190,7 +200,7 @@ export default function Contacts() {
             </div>
         </div>
     </section> */}
-    {/* <div className="p-4 md:w-1/2 lg:w-1/3 xl:w-1/4">
+      {/* <div className="p-4 md:w-1/2 lg:w-1/3 xl:w-1/4">
       <button onClick={handleShowSuccess} className="bg-blue-500 text-white p-2 rounded-md">
         Click me
       </button>
@@ -206,72 +216,72 @@ export default function Contacts() {
         </div>
       )}
     </div> */}
-           
-  <div className="contact_us_2 fontFamilyContacts">
-  <div className="responsive-container-block big-container">
-    <div className="responsive-container-block container"> 
-      <form onSubmit={handleSubmit} action="https://api.web3forms.com/submit"  method="POST">
-        {/* empty form elements */}
-        <input type="hidden" name="redirect" value="https://veract.io" />
-        <input type="hidden" name="access_key" value="9d3da815-bac9-4a3d-be26-6f4f5689cbba" />
-        {/* <input type="hidden" name="_autoresponse" value="Thank you for contacting us, we will get back to you soon!!"/> */}
 
-        <div className="container-block form-wrapper">
-          <p className="text-blk contactus-head">
-            {/* Get in <span style={{color:"#000"}}> Touch </span> */}
-          </p>
-          <p className="text-blk contactus-subhead" style={{fontSize:18}}>
-          Feel free to contact us any time.
-          </p>
-          <div className="responsive-container-block"> 
+      <div className="contact_us_2 fontFamilyContacts">
+        <div className="responsive-container-block big-container">
+          <div className="responsive-container-block container">
+            <form onSubmit={handleSubmit} action="https://api.web3forms.com/submit" method="POST">
+              {/* empty form elements */}
+              <input type="hidden" name="redirect" value="https://veract.io" />
+              <input type="hidden" name="access_key" value="9d3da815-bac9-4a3d-be26-6f4f5689cbba" />
+              {/* <input type="hidden" name="_autoresponse" value="Thank you for contacting us, we will get back to you soon!!"/> */}
 
-            <div className="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
-              <p className="text-blk input-title">
-                FIRST NAME
-              </p>
-              <input className="input" id="ijowk" name="FirstName" placeholder="Enter first name" 
-                value={fname}
-                onChange={e => setfName(e.target.value)}
-                required/>
-            </div>
-            <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-              <p className="text-blk input-title">
-                LAST NAME
-              </p>
-              <input className="input" id="indfi" name="Last Name" placeholder="Enter last name"
-              value={lname}
-              onChange={e => setlName(e.target.value)}
-              />
-            </div>
-            <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-              <p className="text-blk input-title">
-                EMAIL
-              </p>
-              <input className="input" id="ipmgh" name="Email" placeholder="Enter email"  
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              required/>
-            </div>
-            <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-              <p className="text-blk input-title">
-                PHONE NUMBER
-              </p>
-              <input className="input" id="imgis" name="PhoneNumber" placeholder="Enter phone no" type='number' 
-              value={phone}
-              onChange={e => setPhone(e.target.value)}
-              required/>
-            </div>
-            <div className="responsive-cell-block w-[50%]" id="i634i">
-              <p className="text-blk input-title">
-                WHAT DO YOU HAVE IN MIND
-              </p>
-              <textarea className="textinput" id="i5vyy" name="query" placeholder="Enter query"  
-              value={text}
-              onChange={e => setText(e.target.value)}
-              required />
-            </div>
-          </div>
-        {/* <div className='flex flex-row w-full'>
+              <div className="container-block form-wrapper">
+                <p className="text-blk contactus-head">
+                  {/* Get in <span style={{color:"#000"}}> Touch </span> */}
+                </p>
+                <p className="text-blk contactus-subhead" style={{ fontSize: 18 }}>
+                  Feel free to contact us any time.
+                </p>
+                <div className="responsive-container-block">
+
+                  <div className="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
+                    <p className="text-blk input-title">
+                      FIRST NAME
+                    </p>
+                    <input className="input" id="ijowk" name="FirstName" placeholder="Enter first name"
+                      value={fname}
+                      onChange={e => setfName(e.target.value)}
+                      required />
+                  </div>
+                  <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                    <p className="text-blk input-title">
+                      LAST NAME
+                    </p>
+                    <input className="input" id="indfi" name="Last Name" placeholder="Enter last name"
+                      value={lname}
+                      onChange={e => setlName(e.target.value)}
+                    />
+                  </div>
+                  <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                    <p className="text-blk input-title">
+                      EMAIL
+                    </p>
+                    <input className="input" id="ipmgh" name="Email" placeholder="Enter email"
+                      value={email}
+                      onChange={e => setEmail(e.target.value)}
+                      required />
+                  </div>
+                  <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                    <p className="text-blk input-title">
+                      PHONE NUMBER
+                    </p>
+                    <input className="input" id="imgis" name="PhoneNumber" placeholder="Enter phone no" type='number'
+                      value={phone}
+                      onChange={e => setPhone(e.target.value)}
+                      required />
+                  </div>
+                  <div className="responsive-cell-block w-[50%]" id="i634i">
+                    <p className="text-blk input-title">
+                      WHAT DO YOU HAVE IN MIND
+                    </p>
+                    <textarea className="textinput" id="i5vyy" name="query" placeholder="Enter query"
+                      value={text}
+                      onChange={e => setText(e.target.value)}
+                      required />
+                  </div>
+                </div>
+                {/* <div className='flex flex-row w-full'>
             <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
               <p className="text-blk input-title">
                 PHONE NUMBER
@@ -291,13 +301,13 @@ export default function Contacts() {
               required />
             </div>
         </div>  */}
-          <button className="submit-btn" type="submit">
-              Submit
-            </button>
-            
-        </div>
-       
-        {/* <div className="social-media-links">
+                <button className="submit-btn" type="submit">
+                  Submit
+                </button>
+
+              </div>
+
+              {/* <div className="social-media-links">
           <a href="#" id="ix94i-2">
             <img className="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png"/>
           </a>
@@ -311,8 +321,8 @@ export default function Contacts() {
             <img className="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png"/>
           </a>
         </div> */}
-      </form>
-      {/* <div>
+            </form>
+            {/* <div>
       <button
         onClick={() => {
           setModalOpen(true);
@@ -323,21 +333,19 @@ export default function Contacts() {
 
       {modalOpen && <Modal setOpenModal={setModalOpen} />}
     </div> */}
-      {/* <div>
+            {/* <div>
       <button onClick={() => {
           setModalOpen(true);
           }}>click</button>
           {modalOpen && <Modal />} 
       </div> */}
-      <div >
-      {modalOpen && <div className='modal-form' ><Modal setOpenModal={setModalOpen} /></div>}
+            <div >
+              {modalOpen && <div className='modal-form' ><Modal setOpenModal={setModalOpen} /></div>}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-  
-        </div>
-       
-    );
+  );
 }
